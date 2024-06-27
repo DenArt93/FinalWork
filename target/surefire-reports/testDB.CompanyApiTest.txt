@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: testDB.CompanyApiTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.456 s - in testDB.CompanyApiTest

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testDB.CompanyApiTest" time="17.456" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/admin/IdeaProjects/FinalWork/target/test-classes:/Users/admin/IdeaProjects/FinalWork/target/classes:/Users/admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/admin/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/admin/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/admin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/admin/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/admin/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/admin/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/Users/admin/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/admin/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/admin/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/Users/admin/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/admin/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/admin/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/admin/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/admin/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/Users/admin/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/Users/admin/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/Users/admin/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/admin/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/admin/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/Users/admin/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/admin/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/admin/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/admin/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/admin/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="testCompanyApiTest" value="true"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Yekaterinburg"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/Users/admin/Library/Java/JavaVirtualMachines/corretto-17.0.11/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/admin/IdeaProjects/FinalWork/target/surefire/surefirebooter3318951837736273227.jar /Users/admin/IdeaProjects/FinalWork/target/surefire 2024-06-27T13-49-55_795-jvmRun1 surefire16711142309701623263tmp surefire_01225347182060945990tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/admin/IdeaProjects/FinalWork/target/test-classes:/Users/admin/IdeaProjects/FinalWork/target/classes:/Users/admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/admin/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/admin/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/admin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/admin/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/admin/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/admin/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/Users/admin/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/admin/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/admin/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/Users/admin/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/admin/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/admin/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/admin/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/admin/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/Users/admin/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/Users/admin/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/Users/admin/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/Users/admin/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/admin/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/admin/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/Users/admin/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/admin/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/admin/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/admin/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/admin/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Users/admin/Library/Java/JavaVirtualMachines/corretto-17.0.11/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/admin/IdeaProjects/FinalWork"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/admin/IdeaProjects/FinalWork/target/surefire/surefirebooter3318951837736273227.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+9-LTS"/>
+    <property name="user.name" value="admin"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.11.9.1"/>
+    <property name="localRepository" value="/Users/admin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/4w/z17sf_dj43nbrppnbf3hgb800000gn/T/"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="/Users/admin/IdeaProjects/FinalWork"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.11+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateEmployeeInNonExistentCompany" classname="testDB.CompanyApiTest" time="4.145">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "bloom",
+    "password": "fire-fairy"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:49:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 216
+Connection: keep-alive
+CF-Ray: 89a42fd0da5a9bef-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"d9-x5KZJk4r6N6eBTETlmO6h5ZyS/U"
+Vary: Accept-Encoding
+rndr-id: e2e82038-0631-4b5b
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgxOTksImV4cCI6MTcxOTQ3OTA5OX0.aAh6QZr5TG6bhoI1skWttorHy_EeqMCZfQCUvF21vd8",
+    "role": "admin",
+    "displayName": "bloom",
+    "login": "bloom"
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgxOTksImV4cCI6MTcxOTQ3OTA5OX0.aAh6QZr5TG6bhoI1skWttorHy_EeqMCZfQCUvF21vd8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Dedra",
+    "lastName": "Stark",
+    "middleName": "darrick.spinka",
+    "companyId": 2020,
+    "email": "danny.armstrong@yahoo.com",
+    "avatar_url": "http://example.com/avatar.jpg",
+    "phone": "0354",
+    "birthdate": "1990-01-01T00:00:00",
+    "isActive": true,
+    "createDateTime": "2024-06-27T13:49:59.851489",
+    "lastChangedDateTime": "2024-06-27T13:49:59.851543",
+    "url": "http://example.com/avatar.jpg"
+}
+HTTP/1.1 500 Internal Server Error
+Date: Thu, 27 Jun 2024 08:50:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 76
+Connection: keep-alive
+CF-Ray: 89a42fde9fa43835-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"34-rlKccw1E+/fV8niQk4oFitDfPro"
+Vary: Accept-Encoding
+rndr-id: e68a11fb-1635-4588
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "statusCode": 500,
+    "message": "Internal server error"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateCompanyAddEmployeesAndEdit" classname="testDB.CompanyApiTest" time="4.765">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "bloom",
+    "password": "fire-fairy"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 217
+Connection: keep-alive
+CF-Ray: 89a42fe3bc3e383e-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"d9-r+Gq+OtGQNliocpQyLlHVj212zw"
+Vary: Accept-Encoding
+rndr-id: c6f67401-810a-4c73
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s",
+    "role": "admin",
+    "displayName": "bloom",
+    "login": "bloom"
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/company
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Kub, Bruen and Weimann",
+    "description": "innovate bleeding-edge metrics"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+CF-Ray: 89a42fe6b8899745-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"c-nob/9Z7edHO6wpsKITqYxtLnfFo"
+Vary: Accept-Encoding
+rndr-id: 514d9090-3173-4471
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 13407
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Emerald",
+    "lastName": "Nikolaus",
+    "middleName": "fredrick.koelpin",
+    "companyId": 13407,
+    "email": "justin.daugherty@gmail.com",
+    "avatar_url": "http://example.com/avatar1.jpg",
+    "phone": "6118",
+    "birthdate": "1990-01-01T00:00:00",
+    "isActive": true,
+    "createDateTime": "2024-06-27T13:50:02.001790",
+    "lastChangedDateTime": "2024-06-27T13:50:02.001819",
+    "url": "http://example.com/avatar1.jpg"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+CF-Ray: 89a42fec0d6337f2-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"b-5G9ULXyblA9PQfpQnfbEHRlW+94"
+Vary: Accept-Encoding
+rndr-id: b471c6b8-d7fb-4e5c
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 8988
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Asha",
+    "lastName": "Lindgren",
+    "middleName": "suzann.bradtke",
+    "companyId": 13407,
+    "email": "mark.barton@gmail.com",
+    "avatar_url": "http://example.com/avatar2.jpg",
+    "phone": "2938",
+    "birthdate": "1990-01-01T00:00:00",
+    "isActive": true,
+    "createDateTime": "2024-06-27T13:50:02.870194",
+    "lastChangedDateTime": "2024-06-27T13:50:02.870226",
+    "url": "http://example.com/avatar2.jpg"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+CF-Ray: 89a42ff17e282be0-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"b-6DFI24l/SJ/B+aWhBCRu674i7To"
+Vary: Accept-Encoding
+rndr-id: ef86dde2-67e8-4ace
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 8989
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Marybelle",
+    "lastName": "Mohr",
+    "middleName": "geneva.langworth",
+    "companyId": 13407,
+    "email": "rigoberto.mayert@yahoo.com",
+    "avatar_url": "http://example.com/avatar3.jpg",
+    "phone": "4989",
+    "birthdate": "1990-01-01T00:00:00",
+    "isActive": true,
+    "createDateTime": "2024-06-27T13:50:03.651514",
+    "lastChangedDateTime": "2024-06-27T13:50:03.651544",
+    "url": "http://example.com/avatar3.jpg"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+CF-Ray: 89a42ff65aa71c2c-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"b-5g1VlouoPdUjNbV5GdMzyhmskfQ"
+Vary: Accept-Encoding
+rndr-id: 1f75ecef-4239-4768
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 8990
+}
+Request method:	PATCH
+Request URI:	https://x-clients-be.onrender.com/employee/8990
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDEsImV4cCI6MTcxOTQ3OTEwMX0.EHiYbZF7q7hu_pz2DRk5hhY_F8ryTG6US2GE-zwba9s
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "isActive": false
+}
+HTTP/1.1 200 OK
+Date: Thu, 27 Jun 2024 08:50:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 101
+Connection: keep-alive
+CF-Ray: 89a42ffb4c62923b-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"50-oPpq/5RTpfRNNlc6CvRXMYYF32Q"
+Vary: Accept-Encoding
+rndr-id: 4405588a-fa28-4b0b
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 8990,
+    "isActive": false,
+    "email": null,
+    "url": "http://example.com/avatar3.jpg"
+}
+Request method:	GET
+Request URI:	https://x-clients-be.onrender.com/employee?company=13407
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cache-Control=no-cache
+				Pragma=no-cache
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCompaniesByActiveStatus" classname="testDB.CompanyApiTest" time="4.737">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "bloom",
+    "password": "fire-fairy"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 214
+Connection: keep-alive
+CF-Ray: 89a430015e928fdc-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"d9-GVziX7WjvEH7eFfSH71s8/UgsWA"
+Vary: Accept-Encoding
+rndr-id: 20107cd6-436f-44b0
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMDUsImV4cCI6MTcxOTQ3OTEwNX0.f7eKJMXIs27fuBDlkpq61rhGefoDqH0Wi-11MUTDmaQ",
+    "role": "admin",
+    "displayName": "bloom",
+    "login": "bloom"
+}
+Активные компании:
+Company Name: Bode, Trantow and D'Amore
+Company Name: Jones, Zieme and Muller
+Company Name: Kub, Bruen and Weimann
+Неактивные компании:
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateAndDeleteCompany" classname="testDB.CompanyApiTest" time="3.787">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "bloom",
+    "password": "fire-fairy"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 216
+Connection: keep-alive
+CF-Ray: 89a4301f0b7b9769-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"d9-q1yjQimytCKliEcxmkGGGk/5yhE"
+Vary: Accept-Encoding
+rndr-id: e0cc4a25-7d65-4c22
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMTAsImV4cCI6MTcxOTQ3OTExMH0.tZqDax2GB-hyTxZ0w8EBiM3y7rzU4erCcZywjR86Iq8",
+    "role": "admin",
+    "displayName": "bloom",
+    "login": "bloom"
+}
+Request method:	POST
+Request URI:	https://x-clients-be.onrender.com/company
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMTAsImV4cCI6MTcxOTQ3OTExMH0.tZqDax2GB-hyTxZ0w8EBiM3y7rzU4erCcZywjR86Iq8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Crona-Pacocha",
+    "description": "mesh compelling technologies"
+}
+HTTP/1.1 201 Created
+Date: Thu, 27 Jun 2024 08:50:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+CF-Ray: 89a43021ed0e37c8-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"c-jZ/yNktFr2Q83kILRzls5a61EKM"
+Vary: Accept-Encoding
+rndr-id: 43717482-077a-48e1
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 13408
+}
+Request method:	GET
+Request URI:	https://x-clients-be.onrender.com/company/delete/13408
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-client-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTk0NzgyMTAsImV4cCI6MTcxOTQ3OTExMH0.tZqDax2GB-hyTxZ0w8EBiM3y7rzU4erCcZywjR86Iq8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 27 Jun 2024 08:50:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 168
+Connection: keep-alive
+CF-Ray: 89a43026c8b918e0-FRA
+CF-Cache-Status: DYNAMIC
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+ETag: W/"ce-REo+fQTxAUzZ5oBtImaml58wHyA"
+Vary: Accept-Encoding
+rndr-id: 23327ea5-5b1c-4e10
+x-powered-by: Express
+x-render-origin-server: Render
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 13408,
+    "isActive": true,
+    "createDateTime": "2024-06-27T08:50:11.009Z",
+    "lastChangedDateTime": "2024-06-27T08:50:11.009Z",
+    "name": "Crona-Pacocha",
+    "description": "mesh compelling technologies",
+    "deletedAt": null
+}
+]]></system-out>
+  </testcase>
+</testsuite>
